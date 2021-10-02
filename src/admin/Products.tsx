@@ -33,7 +33,7 @@ const Products = () => {
         <Wrapper>
             <div className="pt-3 pb-2 mb-3 border-bottom">
                 <div className="btn-toolbar mb-2 mb-md-0">
-                    <Link to='/admin/products/create' className="btn btn-sm btn-outline-secondary">Add</Link>
+                    <Link to='/admin/Products/create' className="btn btn-sm btn-outline-secondary">Add</Link>
                 </div>
             </div>
 
@@ -59,7 +59,7 @@ const Products = () => {
                                     <td>{p.likes}</td>
                                     <td>
                                         <div className="btn-group mr-2">
-                                            <Link to={`/admin/products/${p.id}/edit`}
+                                            <Link to={`/admin/Products/${p.id}/edit`}
                                                   className="btn btn-sm btn-outline-secondary">Edit</Link>
                                             <a href="#" className="btn btn-sm btn-outline-secondary"
                                                onClick={() => del(p.id)}
