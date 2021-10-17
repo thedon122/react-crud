@@ -1,4 +1,5 @@
 import React, {SyntheticEvent, useState} from 'react';
+import Wrapper from './Wrapper';
 
 
 const ProductsCreate = () => {
@@ -20,4 +21,16 @@ const ProductsCreate = () => {
 
         setRedirect(true);
     }
+
+    return (
+        <Wrapper>
+            <form onSubmit={submit}>
+                <div className="form-group">
+                    <label>Title</label>
+                    <input type="text" className="form-control" name="title"
+                           onChange={e => setTitle(e.target.value)}
+                    />
+                </div>
+                </form>
+                </Wrapper>
 };
