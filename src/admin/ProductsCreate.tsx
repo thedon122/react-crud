@@ -31,6 +31,12 @@ const ProductsCreate = () => {
                            onChange={e => setTitle(e.target.value)}
                     />
                 </div>
+                <div className="form-group">
+                    <label>Image</label>
+                    <input type="text" className="form-control" name="image"
+                           onChange={e => setImage(e.target.value)}
+                    />
+                </div>
                 </form>
                 </Wrapper>
 };
