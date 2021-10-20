@@ -37,6 +37,10 @@ const ProductsCreate = () => {
                            onChange={e => setImage(e.target.value)}
                     />
                 </div>
+                <button className="btn btn-outline-secondary">Save</button>
                 </form>
                 </Wrapper>
+    );
 };
+
+export default ProductsCreate;
